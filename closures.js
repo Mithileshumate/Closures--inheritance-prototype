@@ -45,18 +45,15 @@ output: 3
 //Que-4. Write a code to calculate area of a rectangle using inner function. 
 //In this case outer function should accept parameter length and inner function should accept parameter breadth.
 
-function rectangle(length, breadth)
-{
+function area(length, breadth){
     this.length = length;
-   
-    this.area = function () 
-    {
+    this.area = function (){
          this.breadth = breadth;
          
-        return (this.length * this.breadth) ;
+         return (this.length * this.breadth) ;
     };
-}
-var c = new rectangle(6,5);
+};
+var c = new area(6,5);
 console.log('Area =', c.area());
 
 
